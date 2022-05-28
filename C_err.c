@@ -22,8 +22,10 @@ int main(int argc,char**argv)
 int check_user(char *in1,char *in2)
 {
     char Uname[20], Upass[20];
-    strcpy(Uname,in1);
-    strcpy(Upass,in2);
+    strncpy(Uname,in1,19);
+	Uname[20]='/0';
+    strncpy(Upass,in2,19);
+	Upass[20]='/0';
     if(!strcmp(Uname,username)&&!strcmp(Upass,pass))
     {
         return 1;

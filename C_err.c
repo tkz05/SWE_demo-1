@@ -5,7 +5,7 @@ int check_user(char *,char *);
 void insert(void);
 void hacker(void);
 char pass[]="1030451",username[]="ADMIN";
-
+//version 3 version 3 version 3
 int main(int argc,char**argv)
 {
     if(check_user(argv[1],argv[2])==0)
@@ -43,7 +43,7 @@ void insert(void)
 	printf("Please input the %d th merchandise price:",idnum);
 	scanf("%d",&tmp);
 	data_price[idnum]=tmp;
-	
+
 	printf("The %d th merchandise price is %d",idnum,data_price[idnum]);
 }
 void hacker(void)
